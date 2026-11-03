@@ -8,6 +8,13 @@
 | **Escopo** | Conectividade de gerenciamento do endpoint Windows 11 (`DESKTOP-0U2NKV7`) ao gerenciador Wazuh privado (`SOC-WAZUH-01` / 10.30.2.49) |
 | **Relacionados** | `docs/phase2_design.md` §2 *Administrative path*, §2 *Windows endpoint implication*, `investigations/SOC-001-002-003-Report.md` §6.3 |
 
+> **Nota de proveniência.** Este ADR registra a decisão tomada em 2026-11-02, quando o manager
+> estava em `10.30.2.49`. Em 2026-11-03 a infraestrutura foi recriada e a VM nasceu em
+> **`10.30.2.40`** — o IP privado é atribuído pela OCI e **muda a cada recreate** (ver
+> `architecture.md` §2.4). Os exemplos de configuração abaixo usam o IP da primeira construção;
+> em operação, derive-o de `terraform output wazuh_private_ip`.
+
+
 ---
 
 ## 1. Contexto e vetores de decisão

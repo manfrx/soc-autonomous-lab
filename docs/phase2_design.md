@@ -46,7 +46,8 @@ A private Wazuh manager cannot directly receive connections from the owner's hom
 > **Addendum — Phase 6/9/10 (2026-11-03).** The Phase 2 prediction above was implemented and
 > confirmed. The approved administrative mechanism is **OCI Bastion** (`SOC-BASTION-01`,
 > `SOC-SUBNET-MGMT-01`), and the agent path runs as SSH port-forwarding tunnels to
-> `10.30.2.49:1514` (events) and `1515` (enrollment).
+> `10.30.2.40:1514` (events) and `1515` (enrollment). The private IP is assigned by OCI and
+> changes on every recreate — derive it from `terraform output wazuh_private_ip`.
 >
 > Two findings from implementation require the design changes recorded in
 > **`adr-001-persistent-agent-connectivity.md`**:
