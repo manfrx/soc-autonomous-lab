@@ -27,3 +27,4 @@ Thumbs.db
 # Logs and local evidence containing potentially sensitive data
 *.log
 infrastructure/inventory/private/
+Senha Wazuh.txt
