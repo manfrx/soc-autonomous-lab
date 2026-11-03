@@ -1,0 +1,16 @@
+# Copy to a local, untracked terraform.tfvars and replace every placeholder.
+tenancy_ocid   = "ocid1.tenancy.oc1..REPLACE_ME"
+compartment_id = "ocid1.compartment.oc1..REPLACE_ME"
+
+# Read-only planning profile. A separate least-privilege profile is required for apply.
+oci_profile = "SOC_DISCOVERY"
+region      = "sa-saopaulo-1"
+
+# Replace 203.0.113.1 with the approved public administration IPv4 address.
+admin_cidr = "203.0.113.1/32"
+
+# Prefer reading the public key in the plan command rather than storing it here.
+# ssh_public_key = "ssh-ed25519 REPLACE_ME"
+
+# Pin the image shown by the reviewed plan before apply.
+# ubuntu_image_ocid = "ocid1.image.oc1.sa-saopaulo-1.REPLACE_ME"

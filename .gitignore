@@ -1,0 +1,29 @@
+# OCI and cloud credentials
+.oci/
+*.pem
+*.key
+*private*key*
+*credentials*
+.env
+.env.*
+!.env.example
+
+# Terraform state, plans and local configuration
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+terraform.tfvars
+*.auto.tfvars
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs and local evidence containing potentially sensitive data
+*.log
+infrastructure/inventory/private/
